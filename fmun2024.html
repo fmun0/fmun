@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMUN 2024</title>
+    <link rel="stylesheet" href="fmun.css">
+</head>
+<body>
+
+    <img src="fmun24.png" alt="">
+
+    <div class="container">
+       <center> <h1>FMUN 2024</h1></center>
+        <form id="loginForm">
+           <center> <input type="text" id="username" placeholder="Enter your name" required>
+            <button type="submit">Login</button>
+        </form></center>
+    </div>
+
+    <audio id="backgroundMusic" src="Na Fikar na Faka by Shaka Funny Punjabi Motivation.mp3" preload="auto"></audio>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                document.getElementById('backgroundMusic').play(Audio);
+                alert(`YE BHI MUN KI TARHAN SCAM HY, ${username}!`);
+            }
+        });
+    </script>
+    <div class="side">
+        <span><b>
+        <li>F</li>
+        <li>M</li>
+        <li>U</li>
+        <li>N</li>
+        <li>2</li>
+        <li>4</li></b>
+    </span></div>
+</body>
+</html>
